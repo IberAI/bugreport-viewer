@@ -1,0 +1,57 @@
+name: Bug Report
+description: Report something that's broken
+title: "[Bug]: <short summary>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in **Bugreport Viewer**!
+        Please remove any PII from logs before sharing.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect vs. what you saw?
+      placeholder: A bug happened!
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Tell us how to reproduce it
+      placeholder: 1) … 2) … 3) …
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+      default: 0
+  - type: input
+    id: version
+    attributes:
+      label: App version / commit
+      placeholder: e.g. v0.1.0 or commit SHA
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Paste trimmed console output or sample log lines (no PII).
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I verified this on the latest main build
+          required: false
+        - label: I removed any sensitive info from logs
+          required: true

@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an improvement or new capability
+title: "[Feature]: <short summary>"
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What & why?
+      description: Describe the feature and the problem it solves
+      placeholder: I want to …
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Example / context
+      description: Add a few anonymized log lines or a realistic scenario
+      placeholder: Example lines…
+  - type: checkboxes
+    id: placement
+    attributes:
+      label: Where should it live?
+      options:
+        - label: Preset chip
+        - label: Control (filter/input)
+        - label: Side panel (analysis)
+        - label: Keyboard shortcut
+        - label: Export/Copy
+        - label: Other
+  - type: textarea
+    id: mvp
+    attributes:
+      label: Minimal viable version
+      placeholder: Smallest useful version…
+  - type: textarea
+    id: nice
+    attributes:
+      label: Nice-to-haves
+  - type: textarea
+    id: perf
+    attributes:
+      label: Performance expectations
+      description: Typical file sizes, interaction patterns, real-time needs

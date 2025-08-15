@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: GitHub Discussions (questions/ideas)
+    url: https://github.com/IberAI/bugreport-viewer/discussions
+    about: Ask questions and brainstorm here
+  - name: Security Bug Bounty (critical vulns)
+    url: https://bounty.github.com/
+    about: Please report security vulnerabilities privately
